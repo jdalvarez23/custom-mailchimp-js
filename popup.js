@@ -2350,9 +2350,10 @@ require({
                         })
                     },
                     setCookieOnSubscribe: function() {
+                        console.log("CATEGORY FROM PREVIOUS FUNCTION:", globalCategory);
+                        var pathURL = "/blob?category=" + globalCategory;
                         var a = new Date((new Date).getTime() + (7 * 24 * 60 * 60 * 1000));
                         document.cookie = "MCPopupSubscribed\x3dyes;expires\x3d" + a.toUTCString() + ";path\x3d/";
-                        console.log("CATEGORY FROM PREVIOUS FUNCTION", globalCategory);
                     },
                     addFields: function() {
                         this.fieldNodes.length && (c.forEach(this.fieldNodes, function(a) {
