@@ -2442,6 +2442,7 @@ require({
                                 t.set(J, "display", "none")
                             }), 3E3)
                         }
+                        this.setCookieOnSubscribe();
                     },
                     _handleErrorResponse: function(a) {
                         var d = b(".popup-signup-success", this.formResponseMessages)[0];
