@@ -2346,7 +2346,7 @@ require({
                             }).then(function(b) {
                                 "error" === b.result ? a._handleErrorResponse(b) : a._handleSuccessResponse(b);
                                 a.emit("resizeFrame", {})
-                            }) : a.emit("resizeFrame", {})
+                            }) a.emit("resizeFrame", {})
                         })
                     },
                     setCookieOnSubscribe: function() {
